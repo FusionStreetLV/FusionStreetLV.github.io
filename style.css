@@ -971,7 +971,7 @@ a.reservation-button {
     display: inline-block;
     font-weight: 700;
     letter-spacing: 4px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px 20px;
     text-transform: uppercase;
     min-width: 200px;
@@ -982,7 +982,7 @@ a.restaurant-pickup-button {
     display: inline-block;
     font-weight: 700;
     letter-spacing: 4px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px 20px;
     text-transform: uppercase;
     min-width: 200px;

@@ -12,14 +12,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dawat Restaurant is a simple restaraunt website for restaurant business" />
-    <meta name="keywords" content="restaurant, pizza, burger, business, house, online, delevery, html, coffee, cafe, bar" />
-    <meta name="author" content="BDEXPERT" />
+    <meta name="keywords" content="foodt, pizza, burger, business, house, online, delevery, html, coffee, cafe, bar" />
+    <meta name="author" content="restaurantpickupapp.com" />
+    <meta property="og:image" content="../promotions/promo_slide_1.jpg">
     
     <!--====== TITLE TAG ======-->
     <title>Fusion Street</title>
 
     <!--====== FAVICON ICON =======-->
-    <link rel="shortcut icon" type="image/ico" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/menu/promo_slide_3.jpg" />
 
     <!--====== STYLESHEETS ======-->
     <link rel="stylesheet" href="css/normalize.css">
@@ -137,7 +138,7 @@
                     <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500"><span>Fusion Street</span> Topas, Sliders & Tacos</h1>
                     <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a  href="#reservation-form-modal" data-toggle="modal">Order Now</a></h3>
                 </div>
-                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_2.jpeg) no-repeat scroll 0 0 / cover;">
+                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_2.jpg) no-repeat scroll 0 0 / cover;">
                     <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Our menus</h2>
                     <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500">View our <span>delicious</span> menu</h1>
                     <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a href="#menu">View Menu</a></h3>
@@ -457,7 +458,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="reservation-form">
-                                        <form id="gform" name="gform" target="hidden_iframe" onsubmit= "submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYufdZtCaJEqSjiacFM0bvbYNPe0q58kk_v_GI8re-gv4Ykw/formResponse" class="table-booking-form" id="reservation">
+                                        <form id="gform" name="gform" target="hidden_iframe" onsubmit= "submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYufdZtCaJEqSjiacFM0bvbYNPe0q58kk_v_GI8re-gv4Ykw/formResponse" class="table-booking-form" >
                                             <div class="row">
                                                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                                                     <label for="entry.1470725155"><i class="fa fa-user-o"></i></label>
@@ -481,7 +482,7 @@
                                                 </div>
                                                
                                                 <div class="col-md-6 col-lg-6 col-sm-6 col-sm-offset-3  col-md-offset-3  col-lg-offset-3 col-xs-12">
-                                                    <button type="submit">Order Now</button>
+                                                    <button type="submit" onClick="myOnClickFn()">Order Now</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -667,7 +668,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                     <div class="footer-copyright">
-                        <p>&copy; 2021 <a href="#">Fustion Street</a> All Right Reserved.</p>
+                        <p>&copy; 2021 <a href="#">Fusion Street</a> All Right Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -688,9 +689,16 @@
 					$('#gform').on('submit', function(e){
                         $('#gform *').fadeOut(2000);
 
-                        $('#gform').prepend("You've successfully scheduled your pickup. Now it's time to order your meal! <a href='#reservation-form-modal' class='restaurant-pickup-button' data-toggle='modal'>Order Now</a>");
+                        $('#gform').prepend("You've successfully scheduled your pickup. Now it's time to order your meal! The Fusion Street ordering app is loading now!");
+                       
 					});
-			</script>
+            </script>
+            	<script>
+                    function myOnClickFn(){
+                        document.location.href="https://fusion-street.herokuapp.com/";
+                    }
+                </script>
+		
 
 
     <!--====== SCRIPTS JS ======-->
