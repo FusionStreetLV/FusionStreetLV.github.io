@@ -31,6 +31,8 @@ Version: 2.0
    1. BASE CSS
 ----------------------*/
 
+
+
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:400,700|PT+Sans+Narrow:400,700');
 .alignleft {
     float: left;
@@ -107,6 +109,7 @@ input:-webkit-autofill:focus {
 }
 
 .navbar-toggle {
+    margin-top:15px;
     border: 2px solid #fff;
     border-radius: 0;
 }
@@ -123,6 +126,47 @@ input:-webkit-autofill:focus {
 .is-sticky .navbar-toggle .icon-bar {
     background: #1a1a1a none repeat scroll 0 0;
 }
+a.read-more-nav {
+    border: 1px solid;
+    color: #ca3d26;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-bottom: 6px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+
+.read-more-nav:hover {
+    margin-left: 15px;
+    background: #ca3d26;
+    color: #fff;
+    border-color: #ca3d26;
+}
+
+/* .is-sticky a.read-more-nav {
+    border: 1px solid;
+    color: #ca3d26;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+}
+
+.is-sticky .read-more-nav:hover {
+    margin-left: 15px;
+    background: #ca3d26;
+    color: #fff;
+    border-color: #ca3d26;
+} */
 
 .area-title {
     margin-bottom: 60px;
@@ -751,6 +795,7 @@ a.read-more {
     color: #fff;
     border-color: #ca3d26;
 }
+
 
 
 /*-----------------------------

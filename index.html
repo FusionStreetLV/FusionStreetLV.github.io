@@ -53,6 +53,7 @@
     <!--- PRELOADER -->
     <div class="preeloader">
         <div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>
+        Loading
     </div>
 
     <!--SCROLL TO TOP-->
@@ -71,9 +72,9 @@
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-6 col-sm-4">
-                            <div class="book-table-popup">
+                            <!-- <div class="book-table-popup">
                                 <a href="#reservation-form-modal" data-toggle="modal">Order Now</a>
-                            </div>
+                            </div> -->
                             <div class="top-social-bookmark">
                                 <ul>
                                     <li><a href="https://www.facebook.com/Foodgician"><i class="fa fa-facebook"></i></a></li>
@@ -100,13 +101,15 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="#home" class="navbar-brand"><img src="img/FusionStreet2.png" alt="logo"></a>
-                            <a href="#home" class="navbar-brand white"><img src="img/FusionStreet.png" alt="logo"></a>
+                            
+                           <a  href="#reservation-form-modal" data-toggle="modal" class="read-more-nav"> Order now</a>
+
+                            <!-- <a href="#home" class="navbar-brand white"><img src="img/FusionStreet.png" alt="logo"></a> -->
                         </div>
                         <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
                             <div class="search-form-area">
                                 <div class="search-form-overlay"></div>
-                                <a class="search-form-trigger" href="#search-form">Search<span></span></a>
+                                <!-- <a class="search-form-trigger" href="#search-form">Search<span></span></a> -->
                                 <div id="search-form" class="search-form">
                                     <form>
                                         <input type="search" placeholder="Search...">
@@ -117,7 +120,7 @@
                                 <li class="active"><a href="#home">Home</a> </li>
                                 <li><a href="#about">about us</a></li> 
                                 <li><a href="#menu">Menu</a></li>
-                                <li><a href="#promotion">Order Now</a></li>
+                                <li><a href="#promotion">Promotion</a></li>
                                 <!-- <li><a href="#team">team</a></li>
                                 <li><a href="#blog">blog</a></li>
                                 <li><a href="#gallery">Gallery</a></li> -->
@@ -480,6 +483,13 @@
                                                     <label for="entry.211410071"><i class="fa fa-clock-o"></i></label>
                                                     <input type="text"name="entry.211410071" id="time" placeholder="Time...">
                                                 </div>
+                                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                    <label for="entry.999164132"><i class="fa fa-clock-o"></i></label>
+                                                    <select name="entry.999164132" id="entry.999164132" placeholder="AM/PM">
+                                                        <option value="AM">AM</option>
+                                                        <option value="PM">PM</option>
+                                                    </select>
+                                                </div>
                                                
                                                 <div class="col-md-6 col-lg-6 col-sm-6 col-sm-offset-3  col-md-offset-3  col-lg-offset-3 col-xs-12">
                                                     <button type="submit" onClick="myOnClickFn()">Order Now</button>
@@ -499,111 +509,7 @@
     <!--RESERVATION BUTTON AREA END-->
 
     <!--TEAM AREA-->
-    <section class="team-area section-padding" id="team">
-        <div class="container wow fadeIn">
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="area-title text-center">
-                        <h2>Our Foodgicians</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 team-slider">
-                    <div class="single-team-member text-center">
-                        <div class="team-member-img ">
-                            <img src="img/team/MeetChefs.jpg" alt="">
-                            <div class="member-social-bookmark">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3>Mark Angelila</h3>
-                            <p>Cras senunc massa quisque tempor dolor sit amet </p>
-                        </div>
-                    </div>
-                    <div class="single-team-member text-center">
-                        <div class="team-member-img ">
-                            <img src="img/team/MeetChefs.jpg" alt="">
-                            <div class="member-social-bookmark">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3>Angel Meskat</h3>
-                            <p>Cras senunc massa quisque tempor dolor sit amet </p>
-                        </div>
-                    </div>
-                    <div class="single-team-member text-center">
-                        <div class="team-member-img ">
-                            <img src="img/team/MeetChefs.jpg" alt="">
-                            <div class="member-social-bookmark">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3>Jon Doe</h3>
-                            <p>Cras senunc massa quisque tempor dolor sit amet </p>
-                        </div>
-                    </div>
-                    <div class="single-team-member text-center">
-                        <div class="team-member-img ">
-                            <img src="img/team/MeetChefs.jpg" alt="">
-                            <div class="member-social-bookmark">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3>Angel Di Maria</h3>
-                            <p>Cras senunc massa quisque tempor dolor sit amet </p>
-                        </div>
-                    </div>
-                    <div class="single-team-member text-center">
-                        <div class="team-member-img ">
-                            <img src="img/team/MeetChefs.jpg" alt="">
-                            <div class="member-social-bookmark">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="member-details">
-                            <h3>Park Ji Sung</h3>
-                            <p>Cras senunc massa quisque tempor dolor sit amet </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  
     <!--TEAM AREA END-->
 
     <!--BLOG AREA-->
@@ -616,14 +522,18 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div class="area-title text-center">
-                        <h2>IG Gallery</h2>
+                        <h2>Instagram</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div class="instagram-feed-content text-center">
-                        <div class="instagram" id="instagram"></div>
+                        <div class="instagram" id="instagram">
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-70013d0f-c170-4ba6-8800-71344cae2253"></div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -689,7 +599,7 @@
 					$('#gform').on('submit', function(e){
                         $('#gform *').fadeOut(2000);
 
-                        $('#gform').prepend("You've successfully scheduled your pickup. Now it's time to order your meal! The Fusion Street ordering app is loading now!");
+                        $('#gform').prepend( '<div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>');
                        
 					});
             </script>
