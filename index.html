@@ -452,7 +452,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <!-- RESERVATION FORM MODAL -->
-                    <div class="modal fade" id="reservation-form-modal" tabindex="-1" role="dialog">
+             <div class="modal fade" id="reservation-form-modal" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -492,7 +492,7 @@
                                                 </div>
                                                
                                                 <div class="col-md-6 col-lg-6 col-sm-6 col-sm-offset-3  col-md-offset-3  col-lg-offset-3 col-xs-12">
-                                                    <button type="submit">Order Now</button>
+                                                    <button type="submit" onClick="myOnClickFn()">Order Now</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -599,15 +599,16 @@
 					$('#gform').on('submit', function(e){
                         $('#gform *').fadeOut(2000);
 
-                        $('#gform').prepend( 'Thank you for making this request. We are excited to announce our ordering application will launch very soon! Until then, please refer to our contact page to place orders at this time.');
+                        $('#gform').prepend( '<div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>');
                        
 					});
             </script>
-<!--             	<script>
+            	<script>
                     function myOnClickFn(){
                         document.location.href="https://fusion-street.herokuapp.com/";
                     }
-                </script> -->
+                </script>
+
 		
 
 
