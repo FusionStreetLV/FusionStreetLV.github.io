@@ -405,6 +405,8 @@ ul#nav li.active a {
 
 .call-to-action i {
     margin-right: 10px;
+    text-transform: none;
+
 }
 
 .is-sticky ul#nav li a {
