@@ -389,6 +389,7 @@ ul#nav li.active a {
 
 .call-to-action {
     color: #fff;
+    text-transform: none;
 }
 
 .call-to-action a {
